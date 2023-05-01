@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .nav_item{
+        @apply lg:px-5 md:px-2 font-semibold text-gray-600
+        text-[16px]
+    }
+    .hov{
+        @apply border-b py-2 hover:border-blue-400 border-b-[2px] border-transparent
+    }
+}
