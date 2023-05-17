@@ -71,7 +71,7 @@ function Navbar() {
                   <Link onClick={addtoggle} className='font-semibold text-black h-[52px] hover:bg-gray-200 px-auto flex items-center justify-center w-full text-[16px] hover:whote' to={'/serviços'}>
                   Serviços        
                   </Link>
-                  <Link onClick={addtoggle} className='font-semibold text-black h-[52px] hover:bg-gray-200 px-auto flex items-center justify-center w-full text-[16px] hover:whote' to={'/sobre'}>
+                  <Link onClick={addtoggle} className='font-semibold text-black h-[52px] hover:bg-gray-200 px-auto flex items-center justify-center w-full text-[16px] hover:whote' to={'/sobrenos'}>
                   Sobre nós
                   </Link>
           </ul>

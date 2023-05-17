@@ -18,7 +18,7 @@ function HomeFooter() {
             <ul className='flex flex-col justify-start'>
                 <li><a className='text-lg text-white' href='/'>Home</a></li>
                 <li><a className='text-lg text-white' href='/serviços'>Serviços</a></li>
-                <li><a className='text-lg text-white' href='/sobre'>Sobre nós</a></li>
+                <li><a className='text-lg text-white' href='/sobrenos'>Sobre nós</a></li>
             </ul>
         </div>
 
