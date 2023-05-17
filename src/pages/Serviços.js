@@ -39,14 +39,14 @@ function Serviços() {
      <div className=' flex relative flex-col'>
 
         <div className=' m-6'>
-            <p className='text-white text-xl mx-10 pb-4'>Cobrimos os planos:</p>
+            <p className='text-white text-xl mx-10 pb-4'>Cobrimos os planos</p>
             <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  '>
                 {planos.map(plano => 
                     <li className=' p-5'>
-                    <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <div className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                       <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
                       >{plano.titulo}</h5>
-                       <p class="text-[18px] text-white dark:text-gray-300">
+                       <p className="text-[18px] text-white dark:text-gray-300">
                      {plano.descrição}
                       </p>
                   </div>
@@ -71,7 +71,7 @@ function Serviços() {
                        <SwiperSlide>
                     <img
                         className="object-contain w-full h-96"
-                        src="https://www.planosdesaudemei.com.br/blog/wp-content/uploads/2021/06/plano-odontologico-bradesco-dental-para-mei-1.jpg"
+                        src="https://banco.bradesco/assets/classic/img/linkedin.png"
                         alt="Bradesco"
                     />
                 </SwiperSlide>

@@ -26,7 +26,7 @@ function Testimonials() {
 
       <motion.div
                 initial={{
-            x:500,
+            x:200,
             opacity:0,
         }}
         whileInView={{  x: 0,
@@ -38,20 +38,14 @@ function Testimonials() {
       >Comentários de quem já nos conhece</p>
       </motion.div>
 
-      <motion.div
-                initial={{
-            opacity:0,
-        }}
-        whileInView={{  
-          opacity:1,}}
-          transition={{ duration: 1.5, }}
-          
+      <div
+       
         className='grid grid-cols-1 lg:grid-cols-3'>
 
         {reviews.map(review => 
         <div className='bg-white overflow-x-hidden mx-2 my-2 lg:my-0 flex relative flex-col items-center rounded-xl p-2'>
           <div>
-            <img src={review.foto} alt='Foto cliente'/>
+            <img src={review.foto} alt='cliente'/>
             </div>
             <FaQuoteLeft className='absolute left-6 top-[40px] text-slate-900 text-2xl'/>
           <div className='flex flex-col items-center'>
@@ -64,7 +58,7 @@ function Testimonials() {
            </div>
           </div>
           <div>
-            <p className='text-black font-bodoni serif lg:text-xl text-center'
+            <p className='text-black text-lg font-bodoni serif lg:text-xl text-center'
             >{review.comentario}</p>
           </div>
         </div>
@@ -73,11 +67,11 @@ function Testimonials() {
 
 
 
-      </motion.div>
+      </div>
 
       <motion.div
               initial={{
-            x:-500,
+            x:-200,
             opacity:0,
         }}
         whileInView={{  x: 0,

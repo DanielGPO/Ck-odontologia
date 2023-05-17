@@ -28,7 +28,7 @@ function HomeFooter() {
             <li><p className='text-white flex flex-row items-center'><FaMapMarkerAlt className='text-orange-500 mr-2'/>Centro - Rio de Janeiro</p></li>
             <li><p className='text-white flex flex-row items-center'><FaMapMarkerAlt className='text-orange-500 mr-2'/>Rua Gonçalves Dias, 89 - Subsala 203</p></li>
             <li><p className='text-white flex flex-row items-center'><MdEmail className='text-yellow-500 mr-2'/> ckodontologia2@gmail.com</p></li>
-            <li><p className='text-white flex flex-row items-center'><AiFillInstagram className='text-white mr-2'/>@ckodontologia</p></li>
+            <li><p className='text-white flex flex-row items-center'><AiFillInstagram className='text-red-400 mr-2'/>@ckodontologia</p></li>
             <li><p className='text-white flex flex-row items-center'><BsTelephone className='mr-2 text-sky-500'/>(21) 2507-5365</p></li>
         </ul>
         </div>

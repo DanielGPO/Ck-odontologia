@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import {FaBars} from 'react-icons/fa'
 import {AiOutlineClose} from 'react-icons/ai'
 import {BsWhatsapp} from 'react-icons/bs'
@@ -28,17 +28,20 @@ function Navbar() {
         >logia</span></h2>
         </div>
 
-        <div>
+        <nav>
             <ul className='hidden md:flex flex-row items-center'>
-            <Link to={'/'}>
-                <li className='nav_item hov'>Home</li>
-                </Link>
-                <Link to={'/serviços'}>
-                <li className='nav_item hov'>Serviços</li>
-                </Link>
-                <Link to={'/sobrenos'}>
-                <li className='nav_item hov'>Sobre nós</li>
-                </Link>
+            <NavLink to='/'
+            className={({isActive}) => !isActive ? 'nav_item ' : 'active_Nav'}>
+                Home
+                </NavLink>
+                <NavLink to='/serviços'
+                className={({isActive}) => !isActive ? 'nav_item ' : 'active_Nav'}>
+                Serviços
+                </NavLink>
+          <NavLink to='/sobrenos'
+                className={({isActive}) => !isActive ? 'nav_item ' : 'active_Nav'}>
+                Sobre nós
+                </NavLink>
     
                 <li className='nav_item border-blue-400 hover:bg-gray-200 p-2 px-4 md:ml-2 hover:font-bold  hover:border-blue-600 rounded-lg border-[1px]'>
              <a className='flex flex-row items-center'  href={`https://wa.me/${encodedPhoneNumber}`}
@@ -53,25 +56,26 @@ function Navbar() {
           <p onClick={addtoggle} className='md:hidden mx-2'><AiOutlineClose className='text-black text-2xl'/> </p>
            : 
            <p onClick={addtoggle} className='md:hidden'><FaBars className='text-black text-2xl'/></p>}
-        </div>
+        </nav>
 
         {toggle 
         
         ?
         
-        <div className='absolute md:hidden z-10 top-20 right-0 bg-gray-400 w-full'>
+        <div  className='absolute md:hidden z-10 top-20 right-0 bg-gray-400 w-full'>
             <ul className='flex flex-col items-center '>
 
-              <Link className='font-semibold text-black h-[52px] hover:bg-gray-200 px-auto flex items-center justify-center w-full text-[16px] hover:whote' to={'/'}>
+              <Link onClick={addtoggle} className='font-semibold text-black h-[52px] hover:bg-gray-200 px-auto flex items-center justify-center w-full text-[16px] hover:whote' to={'/'}>
                 Home        
               </Link>
-                  <Link className='font-semibold text-black h-[52px] hover:bg-gray-200 px-auto flex items-center justify-center w-full text-[16px] hover:whote' to={'/serviços'}>
+                  <Link onClick={addtoggle} className='font-semibold text-black h-[52px] hover:bg-gray-200 px-auto flex items-center justify-center w-full text-[16px] hover:whote' to={'/serviços'}>
                   Serviços        
                   </Link>
-                  <Link className='font-semibold text-black h-[52px] hover:bg-gray-200 px-auto flex items-center justify-center w-full text-[16px] hover:whote' to={'/sobre'}>
+                  <Link onClick={addtoggle} className='font-semibold text-black h-[52px] hover:bg-gray-200 px-auto flex items-center justify-center w-full text-[16px] hover:whote' to={'/sobre'}>
                   Sobre nós
                   </Link>
-            </ul>
+          </ul>
+          
         </div> 
         
         : <div className='absolute'/>}
