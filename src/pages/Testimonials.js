@@ -18,7 +18,7 @@ function Testimonials() {
     {
       foto: 'https://lh3.googleusercontent.com/a/AGNmyxaCXSN6p6JjkoP5Ur4v2Qz5mf24ZtPeMZZQic-u=w60-h60-p-rp-mo-br100',
       cliente: 'Paolo Bruzaferro Monti',
-      comentario: ' Tinha pânico de dentista, mas desta vez foi super tranquilo.  Parabéns,  profissional ética e com paciência. Tudo bem explicado desde o início.  Tudo que foi proposto foi cumprido.',
+      comentario: ' Tinha pânico de dentista, mas desta vez foi super tranquilo.  Parabéns,  profissional, ética e com paciência. Tudo bem explicado desde o início.  Tudo que foi proposto foi cumprido.',
     },
   ]
   return (

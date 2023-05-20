@@ -22,7 +22,7 @@ export const CARDS = [
     },
     {
         titulo: 'Clareza e comprometimento',
-        descrição: 'comprometimento em tornar a sua experiência a melhor possível.',
+        descrição: 'Comprometimento em tornar a sua experiência a melhor possível.',
         imagem: arcada,
         alt: 'Doutora mostrando prótese de arcada dentária',
         id: 3
