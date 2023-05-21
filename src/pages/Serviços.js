@@ -35,9 +35,7 @@ function Serviços() {
   return (
     <div className='bg-slate-800  w-full'>
       <p className='text-2xl font-bold text-white p-10'>Serviços & Planos</p>
-     
      <div className=' flex relative flex-col'>
-
         <div className=' m-6'>
             <p className='text-white text-xl mx-10 pb-4'>Cobrimos os planos</p>
             <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  '>
@@ -53,58 +51,53 @@ function Serviços() {
                 </li> )}
             </ul>
         </div>
-
-
         <div className='flex flex-col lg:flex-row '>
-
             <div className=' text-center p-10'>
                 <p className='dark:text-gray-300 text-lg p-2'>
                     Como prestadores credenciados das principais seguradoras do mercado, estamos empenhados em oferecer um atendimento odontológico de qualidade aos nossos pacientes. Se você é beneficiário de algum desses planos, não hesite em entrar em contato conosco para agendar uma consulta. Estamos à disposição para ajudá-lo a manter a saúde bucal em dia!
                 </p>
             </div>
-
       <div className=' lg:w-[880px] '>
             <Swiper
                 navigation={true}
                 modules={[Navigation]}
                 className="mySwiper">
                        <SwiperSlide>
-                    <img
+                    <img loading='lazy'
                         className="object-contain w-full h-96"
                         src="https://banco.bradesco/assets/classic/img/linkedin.png"
                         alt="Bradesco"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img
+                    <img loading='lazy'
                         className="object-contain w-full h-96"
                         src="https://sintaemasp.org.br/wp-content/uploads/2021/07/sintaema-odontoprev-beneficio-saude.jpg"
                         alt="Odontoprev logo"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img
+                    <img loading='lazy'
                         className="object-contain w-full h-96"
                         src="https://is2-ssl.mzstatic.com/image/thumb/Purple122/v4/e0/c5/c4/e0c5c4e2-6ddb-b2a6-1ae7-c5f45e272bb6/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x600wa.png"
                         alt="Rede unna"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img
+                    <img loading='lazy'
                         className="object-contain w-full h-96"
                         src="https://www.valordeplanosdesaude.com.br/wp-content/uploads/2018/05/amil-dental1.jpg"
                         alt="Amil"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img
+                    <img loading='lazy'
                         className="object-contain w-full h-96"
                         src="https://www.conveniomedicoempresarial.com.br/img/noticias/convenio-medico-golden-cross-pme.jpg"
                         alt="Golden Cross"
                     />
                 </SwiperSlide>
             </Swiper>
-
       </div>
         </div>
      </div>

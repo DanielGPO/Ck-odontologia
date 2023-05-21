@@ -7,12 +7,9 @@ import {BsTelephone} from 'react-icons/bs'
 function HomeFooter() {
   return (
     <div className='lg:h-[200px] justify-around items-center flex-col flex lg:flex-row w-full bg-gradient-to-r from-slate-600 to-slate-950  '>
-
         <div>
             <p className='lg:text-4xl text-xl py-10 lg:py-0 text-white font-extrabold'>Ck Odontologia</p>
         </div>
-
-
         <div className='flex flex-col '>
             <p className='text-2xl text-white  font-bold pb-5'>Menu</p>
             <ul className='flex flex-col justify-start'>
@@ -21,7 +18,6 @@ function HomeFooter() {
                 <li><a className='text-lg text-white' href='/sobrenos'>Sobre nós</a></li>
             </ul>
         </div>
-
         <div className='flex flex-col pb-10 md:pb-0'>
         <p className='text-2xl text-white  font-bold pb-2 pt-3'>Contato</p>
         <ul>

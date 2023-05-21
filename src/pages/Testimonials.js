@@ -38,37 +38,25 @@ function Testimonials() {
       >Comentários de quem já nos conhece</p>
       </motion.div>
 
-      <div
-       
-        className='grid grid-cols-1 lg:grid-cols-3'>
-
-        {reviews.map(review => 
-        <div className='bg-white overflow-x-hidden mx-2 my-2 lg:my-0 flex relative flex-col items-center rounded-xl p-2'>
-          <div>
-            <img src={review.foto} alt='cliente'/>
-            </div>
-            <FaQuoteLeft className='absolute left-6 top-[40px] text-slate-900 text-2xl'/>
-          <div className='flex flex-col items-center'>
-            <p className='text-black text-lg'
-            >{review.cliente}</p>
-            <div className='flex flex-row'>
-            {[...Array(5)].map((start) =>{
-              return <p> <AiFillStar className='text-yellow-500'/></p>
-            })}
-           </div>
-          </div>
-          <div>
-            <p className='text-black text-lg font-bodoni serif lg:text-xl text-center'
-            >{review.comentario}</p>
-          </div>
+     <div className="grid grid-cols-1 lg:grid-cols-3">
+  {reviews.map((review) => (
+    <div className="bg-white overflow-x-hidden mx-2 my-2 lg:my-0 flex relative flex-col items-center rounded-xl p-2" key={review.id}>
+      <img src={review.foto} alt="cliente" />
+      <FaQuoteLeft className="absolute left-6 top-[40px] text-slate-900 text-2xl" />
+      <div className="flex flex-col items-center">
+        <p className="text-black text-lg">{review.cliente}</p>
+        <div className="flex flex-row">
+          {[...Array(5)].map((_, index) => (
+            <p key={index}>
+              <AiFillStar className="text-yellow-500" />
+            </p>
+          ))}
         </div>
-          
-          )}
-
-
-
       </div>
-
+      <p className="text-black text-lg font-bodoni serif lg:text-xl text-center">{review.comentario}</p>
+    </div>
+  ))}
+</div>
       <motion.div
               initial={{
             x:-200,

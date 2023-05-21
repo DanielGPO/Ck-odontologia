@@ -7,7 +7,7 @@ function SobreNos() {
     <div className='flex flex-col'>
     <div className='h-screen '>
       <div className=' h-screen md:h-screen w-full  absolute z-[-20] '>
-        <img className='w-full h-full object-cover' src={ferramentas} alt='ferramentas' />
+        <img loading='lazy' className='w-full h-full object-cover' src={ferramentas} alt='ferramentas' />
       </div>
 
       <div className='w-full absolute h-screen bg-black/75 md:bg-black/25 z-[-19]'/>
