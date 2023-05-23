@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .nav_item{
-        @apply lg:px-5 md:px-2 font-semibold text-gray-600
-        text-[16px]  py-2 hover:border-blue-400 border-b-[2px] border-b-transparent
-    }
-    .active_Nav{
-        @apply  border-blue-400 border-b-[2px] lg:px-5 md:px-2 font-semibold text-gray-600 text-[16px] border-b py-2  border-b-[2px]
-    }
+@layer components {
+  .nav_item {
+    @apply lg:px-5 md:px-2 font-semibold text-gray-600
+        text-[16px]  py-2 hover:border-blue-400 border-b-[2px] border-b-transparent;
+  }
+  .active_Nav {
+    @apply border-blue-400 border-b-[2px] lg:px-5 md:px-2 font-semibold text-gray-600 text-[16px] border-b py-2  border-b-[2px];
+  }
 }
