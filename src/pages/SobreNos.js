@@ -22,16 +22,15 @@ function SobreNos() {
               Sobre Nós
             </p>
 
-            <div className="md:absolute left-2 top-16 md:top-[80px] m-2 lg:m-0 md:w-[526px] md:left-6 ">
+            <div className="md:absolute left-2 top-16 md:top-[80px] m-2 lg:m-0 md:w-[526px] py-2 md:py-0 md:left-6 ">
               <p className="text-white font-extrabold pb-4 fon-sans text-xl md:text-3xl ">
                 Um pouco da nossa história
               </p>
               <p className="text-white text-[18px] text-start md:text-lg">
-                Nossa história começou há mais de uma década, criamos a CK com o
+                Nossa história começou há mais de duas década, criamos a CK com o
                 intuito de trazer um atendimento personalizado e de qualidade
                 aos nossos pacientes. Com muito trabalho e dedicação, a clínica
-                cresceu e se tornou uma referência na região. A Dra. Karina, em
-                conjunto com sua parceria investiu em tecnologia de ponta e em
+                cresceu e se tornou uma referência na região, investindo em tecnologia de ponta e em
                 uma equipe de profissionais capacitados, que compartilham do
                 mesmo compromisso em proporcionar um atendimento humanizado e de
                 excelência. Nosso objetivo é cuidar da sua saúde bucal de forma

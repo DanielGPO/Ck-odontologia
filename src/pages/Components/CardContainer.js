@@ -12,10 +12,10 @@ export default function CardContainer(props) {
         />
 
         <div className="p-5">
-          <h5 className="mb-2 md:text-2xl text-lg lg:text-normal font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 className="mb-2 md:text-2xl text-lg lg:text-normal font-bold tracking-tight text-white">
             {props.titulo}
           </h5>
-          <p className="mb-3  text-lg lg:text-normal text-gray-700 dark:text-gray-400">
+          <p className="mb-3  text-lg lg:text-normal text-white md:text-gray-700 md:dark:text-gray-400">
             {props.descrição}
           </p>
         </div>

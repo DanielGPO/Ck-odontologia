@@ -64,11 +64,11 @@ function Navbar() {
         </ul>
         {toggle ? (
           <p onClick={addtoggle} className="md:hidden mx-2">
-            <AiOutlineClose className="text-black text-2xl" />{" "}
+            <AiOutlineClose className="text-black text-3xl transition transform duration-250" />{" "}
           </p>
         ) : (
           <p onClick={addtoggle} className="md:hidden">
-            <FaBars className="text-black text-2xl" />
+            <FaBars className="text-black text-2xl transition transform duration-250" />
           </p>
         )}
       </nav>

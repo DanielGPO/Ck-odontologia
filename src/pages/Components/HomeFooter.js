@@ -44,7 +44,7 @@ function HomeFooter() {
           <li>
             <p className="text-white flex flex-row items-center">
               <FaMapMarkerAlt className="text-orange-500 mr-2" />
-              Rua Gonçalves Dias, 89 - Subsala 203
+              Rua Gonçalves Dias, 89 - Sobreloja 203
             </p>
           </li>
           <li>

@@ -10,17 +10,15 @@ import LoadingSpinner from "./Components/LoadingSpinner";
 function Home() {
   const phoneNumber = "2125075365";
   const encodedPhoneNumber = encodeURIComponent(phoneNumber);
-  const [isLoading, setIsLoading] = useState(true); // Estado para controle de loading
+  const [isLoading, setIsLoading] = useState(true); 
 
   useEffect(() => {
     const delay = 3000; // Tempo de espera em milissegundos
 
-    // Simulação do carregamento
     const timeout = setTimeout(() => {
-      setIsLoading(false); // Altera o estado para indicar que o carregamento foi concluído
+      setIsLoading(false);
     }, delay);
 
-    // Limpa o timeout quando o componente for desmontado
     return () => clearTimeout(timeout);
   }, []);
 
@@ -33,17 +31,17 @@ function Home() {
           <div className="lg:h-[600px] pt-2 bg-blue-400/75 flex justify-center">
             <div className="md:h-[550px] lg:h-[520px] h-[460px] sm:max-w-[900px] lg:max-w-[1230px] relative rounded-xl drop-shadow-2xl bg-white md:w-[1200px] px-auto flex flex-col md:flex-row md:mt-10 lg:mt-[18px] md:justify-between">
               <div className="md:w-[560px] lg:w-full md:bg-gradient-to-r md:from-blue-300/50 md:to-transparent relative p-[4px] md:p-10">
-                <h2 className="md:text-slate-950 lg:text-black text-white text-[32px] md:text-[48px] lg:text-[62px] relative antialiased font-extrabold">
+                <h2 className="md:text-slate-950 m-2 md:m-0 lg:text-black text-white text-[32px] md:text-[48px] lg:text-[62px] relative antialiased font-extrabold">
                   A Clínica Dentária que cuida de você
                   <div className="md:absolute w-full hidden md:flex h-full top-0 bg-gradient-to-r from-transparent to-white/50" />
                 </h2>
                 <div className="mt-[150px] mx-2 lg:mt-[30px] md:mt-[40px]">
                   <p className="md:italic md:text-blue-600 text-white font-extrabold text-[20px] md:text-[16px] flex flex-row items-center">
-                    <FaTooth className="hidden lg:flex md:text-blue-500 text-[42px] md:text-[34px] m-2" />
+                    <FaTooth className="hidden pulse ping lg:flex md:text-blue-500 text-[42px] md:text-[34px] m-2" />
                     Entre em contato através do Whatsapp e agende uma consulta
                   </p>
                   <div className="ml-2 md:ml-0 lg:mt-10 mt-[50px]">
-                    <div className="lg:w-[172px]">
+                    <div className="lg:w-[179px]">
                       <a
                         href={`https://wa.me/${encodedPhoneNumber}`}
                         target="_blank"
