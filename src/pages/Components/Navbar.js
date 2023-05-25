@@ -15,7 +15,7 @@ function Navbar() {
   const encodedPhoneNumber = encodeURIComponent(phoneNumber);
 
   return (
-    <div className="md:px-16 w-full px-2  items-center bg-slate-100/50 py-8 flex flex-row justify-between">
+    <div className="md:px-16 w-full px-2 z-100  items-center bg-slate-100/50 py-8 flex flex-row justify-between">
       <div className="mx-2 md:mx-0">
         <h2 className="md:text-[26px] md:font-bold text-[22px] text-gray-700">
           <span className=" font-bold text-blue-800">CK</span> Odonto
@@ -74,34 +74,37 @@ function Navbar() {
       </nav>
 
       {toggle ? (
-        <div className="absolute md:hidden z-10 top-20 right-0 bg-gray-400 w-full">
-          <ul className="flex flex-col items-center ">
+        <>
+        <div
+        className="absolute md:hidden z-20 top-20 right-0 left-0  bg-slate-800 w-full">
+          <div
+            className="flex flex-col items-center  ">
             <Link
               onClick={addtoggle}
-              className="font-semibold text-black h-[52px] hover:bg-gray-200 px-auto flex items-center justify-center w-full text-[16px] hover:whote"
+              className="mobile_Nav"
               to={"/"}
             >
               Home
             </Link>
             <Link
               onClick={addtoggle}
-              className="font-semibold text-black h-[52px] hover:bg-gray-200 px-auto flex items-center justify-center w-full text-[16px] hover:whote"
+              className="mobile_Nav"
               to={"/serviços"}
             >
               Serviços
             </Link>
             <Link
               onClick={addtoggle}
-              className="font-semibold text-black h-[52px] hover:bg-gray-200 px-auto flex items-center justify-center w-full text-[16px] hover:whote"
+              className="mobile_Nav"
               to={"/sobrenos"}
             >
               Sobre nós
             </Link>
-          </ul>
+          </div>
+          <div onClick={addtoggle} className="absolute  z-10 h-screen w-full md:hidden" />
         </div>
-      ) : (
-        <div className="absolute" />
-      )}
+        </>
+      ) : null}
     </div>
   );
 }

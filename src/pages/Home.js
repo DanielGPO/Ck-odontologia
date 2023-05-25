@@ -37,7 +37,7 @@ function Home() {
                 </h2>
                 <div className="mt-[150px] mx-2 lg:mt-[30px] md:mt-[40px]">
                   <p className="md:italic md:text-blue-600 text-white font-extrabold text-[20px] md:text-[16px] flex flex-row items-center">
-                    <FaTooth className="hidden pulse ping lg:flex md:text-blue-500 text-[42px] md:text-[34px] m-2" />
+                    <FaTooth className="hidden lg:flex md:text-blue-500 text-[42px] md:text-[34px] m-2" />
                     Entre em contato através do Whatsapp e agende uma consulta
                   </p>
                   <div className="ml-2 md:ml-0 lg:mt-10 mt-[50px]">

@@ -7,7 +7,7 @@ function SobreNos() {
       <div className="h-screen ">
         <div className=" h-screen md:h-screen w-full  absolute z-[-20] ">
           <img
-            loading="lazy"
+            loading='eager'
             className="w-full h-full object-center object-cover"
             src={ferramentas}
             alt="ferramentas"

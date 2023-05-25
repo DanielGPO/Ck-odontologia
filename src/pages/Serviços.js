@@ -65,7 +65,7 @@ function Serviços() {
               odontológico de qualidade aos nossos pacientes. Se você é
               beneficiário de algum desses planos, não hesite em entrar em
               contato conosco para agendar uma consulta. Estamos à disposição
-              para ajudá-lo a manter a saúde bucal em dia!
+              para ajudá-lo a manter a saúde bucal em dia! 
             </p>
           </div>
           <div className=" lg:w-[880px] ">
