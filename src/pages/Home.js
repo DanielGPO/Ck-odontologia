@@ -28,10 +28,10 @@ function Home() {
         <LoadingSpinner />
       ) : (
         <div>
-          <div className="lg:h-[600px] pt-2 bg-blue-400/75 flex justify-center">
-            <div className="md:h-[550px] lg:h-[520px] h-[460px] sm:max-w-[900px] lg:max-w-[1230px] relative rounded-xl drop-shadow-2xl bg-white md:w-[1200px] px-auto flex flex-col md:flex-row md:mt-10 lg:mt-[18px] md:justify-between">
+          <div className="lg:h-[600px] pt-2 bg-blue-400/75 flex justify-center items-center">
+            <div className="md:h-[550px] lg:h-[520px] h-[460px] sm:max-w-[900px] lg:max-w-[1230px] relative rounded-xl drop-shadow-2xl bg-white md:w-[1200px] px-auto flex flex-col md:flex-row md:my-2  md:justify-between">
               <div className="md:w-[560px] lg:w-full md:bg-gradient-to-r md:from-blue-300/50 md:to-transparent relative p-[4px] md:p-10">
-                <h2 className="md:text-slate-950 m-2 md:m-0 lg:text-black text-white text-[32px] md:text-[48px] lg:text-[62px] relative antialiased font-extrabold">
+                <h2 className="md:text-slate-950 m-2 md:m-0 lg:text-black text-white text-[32px] md:text-[48px] lg:text-[59px] xl:text-[62px] relative antialiased font-extrabold">
                   A Clínica Dentária que cuida de você
                   <div className="md:absolute w-full hidden md:flex h-full top-0 bg-gradient-to-r from-transparent to-white/50" />
                 </h2>
@@ -67,11 +67,11 @@ function Home() {
           </div>
           <div className="lg:mt-0  bg-blue-950 w-full pt-10 ">
             <div className=" mx-auto md:py-0 lg:pb-14 pb-2  py-2 lg:px-4">
-              <p className="text-white text-2xl mt-[-20px] mx-2  lg:mx-24 font-bold  right-0 md:w-[390px]">
+              <p className="text-white text-2xl mt-[-20px] mx-2 lg:mx-10 xl:mx-24 font-bold  right-0 md:w-[390px]">
                 Atendemos a uma variedade de planos{" "}
                 <span className="text-sky-300">odontológicos</span>
               </p>
-              <div className="lg:mx-10">
+              <div className="flex items-center justify-center">
                 <Arraydecards items={CARDS} />
               </div>
             </div>

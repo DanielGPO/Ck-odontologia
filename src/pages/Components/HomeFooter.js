@@ -13,7 +13,7 @@ function HomeFooter() {
         </p>
       </div>
       <div className="flex flex-col ">
-        <p className="text-2xl text-white  font-bold pb-5">Menu</p>
+        <p className="text-2xl text-white  font-bold pb-6">Menu</p>
         <ul className="flex flex-col justify-start">
           <li>
             <a className="text-lg text-white" href="/">

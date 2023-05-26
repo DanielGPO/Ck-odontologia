@@ -7,7 +7,7 @@ import CardsList from "./CardsList";
 
 export const CARDS = [
   {
-    titulo: "Cobrimos um gama extensa de planos",
+    titulo: "Uma gama extensa de planos",
     descrição: "Cobrimos diversos planos para poder lhe atender melhor.",
     imagem: homefoto,
     alt: "Foto de paciente e doutora fazendo checagem nos dentes",

@@ -37,7 +37,7 @@ function Serviços() {
   ];
 
   return (
-    <div className="bg-slate-800  w-full">
+    <div className="bg-slate-800  w-full ">
       <p className="text-2xl font-bold text-white p-10">Serviços & Planos</p>
       <div className=" flex relative flex-col">
         <div className=" m-6">
@@ -45,7 +45,7 @@ function Serviços() {
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  ">
             {planos.map((plano) => (
               <li className=" p-5">
-                <div className="block max-w-sm p-6 border border-slate-600 rounded-lg shadow dark:bg-gray-800 dark:hover:bg-gray-700">
+                <div className="flex flex-col  p-6 border flex-grow border-slate-600 rounded-lg shadow dark:bg-gray-800 dark:hover:bg-gray-700">
                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     {plano.titulo}
                   </h5>
@@ -57,7 +57,7 @@ function Serviços() {
             ))}
           </ul>
         </div>
-        <div className="flex flex-col lg:flex-row ">
+        <div className="flex flex-col lg:pb-10 xl:pb-0 xl:flex-row md:items-center md:justify-center ">
           <div className=" text-center p-10">
             <p className="dark:text-gray-300 text-lg p-2">
               Como prestadores credenciados das principais seguradoras do
