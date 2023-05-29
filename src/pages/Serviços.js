@@ -46,7 +46,7 @@ function Serviços() {
             {planos.map((plano) => (
               <li className=" p-5">
                 <div className="flex flex-col  p-6 border flex-grow border-slate-600 rounded-lg shadow dark:bg-gray-800 dark:hover:bg-gray-700">
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
                     {plano.titulo}
                   </h5>
                   <p className="text-[18px] text-white dark:text-gray-300">
@@ -65,7 +65,7 @@ function Serviços() {
               odontológico de qualidade aos nossos pacientes. Se você é
               beneficiário de algum desses planos, não hesite em entrar em
               contato conosco para agendar uma consulta. Estamos à disposição
-              para ajudá-lo a manter a saúde bucal em dia! 
+              para ajudá-lo a manter a saúde bucal em dia!
             </p>
           </div>
           <div className=" lg:w-[880px] ">

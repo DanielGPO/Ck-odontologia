@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -14,7 +14,7 @@ html{
   .active_Nav {
     @apply border-blue-400 border-b-[2px] lg:px-5 md:px-2 font-semibold text-gray-600 text-[16px] py-2;
   }
-  .mobile_Nav{
+  .mobile_Nav {
     @apply font-semibold text-white border-b border-slate-600 h-[62px] hover:bg-slate-700  flex items-center justify-center w-full text-[16px];
   }
 }

@@ -75,34 +75,23 @@ function Navbar() {
 
       {toggle ? (
         <>
-        <div
-        className="absolute md:hidden z-20 top-20 right-0 left-0  bg-slate-800 w-full">
-          <div
-            className="flex flex-col items-center  ">
-            <Link
+          <div className="absolute md:hidden z-20 top-20 right-0 left-0  bg-slate-800 w-full">
+            <div className="flex flex-col items-center  ">
+              <Link onClick={addtoggle} className="mobile_Nav" to={"/"}>
+                Home
+              </Link>
+              <Link onClick={addtoggle} className="mobile_Nav" to={"/serviços"}>
+                Serviços
+              </Link>
+              <Link onClick={addtoggle} className="mobile_Nav" to={"/sobrenos"}>
+                Sobre nós
+              </Link>
+            </div>
+            <div
               onClick={addtoggle}
-              className="mobile_Nav"
-              to={"/"}
-            >
-              Home
-            </Link>
-            <Link
-              onClick={addtoggle}
-              className="mobile_Nav"
-              to={"/serviços"}
-            >
-              Serviços
-            </Link>
-            <Link
-              onClick={addtoggle}
-              className="mobile_Nav"
-              to={"/sobrenos"}
-            >
-              Sobre nós
-            </Link>
+              className="absolute  z-10 h-screen w-full md:hidden"
+            />
           </div>
-          <div onClick={addtoggle} className="absolute  z-10 h-screen w-full md:hidden" />
-        </div>
         </>
       ) : null}
     </div>

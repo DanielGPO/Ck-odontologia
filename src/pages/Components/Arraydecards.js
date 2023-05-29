@@ -15,7 +15,7 @@ export const CARDS = [
   },
   {
     titulo: "Atendimento personalizado",
-    descrição: "Abordamos cada caso pensando no melhor plano possível",
+    descrição: "Abordamos cada caso pensando no melhor plano possível.",
     imagem: surgery,
     alt: "Doutor e paciente em cirurgia",
     id: 2,

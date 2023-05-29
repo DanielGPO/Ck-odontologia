@@ -10,10 +10,10 @@ import LoadingSpinner from "./Components/LoadingSpinner";
 function Home() {
   const phoneNumber = "2125075365";
   const encodedPhoneNumber = encodeURIComponent(phoneNumber);
-  const [isLoading, setIsLoading] = useState(true); 
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const delay = 3000; // Tempo de espera em milissegundos
+    const delay = 2000; // Tempo de espera em milissegundos
 
     const timeout = setTimeout(() => {
       setIsLoading(false);
