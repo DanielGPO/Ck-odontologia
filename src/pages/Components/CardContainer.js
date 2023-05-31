@@ -2,8 +2,10 @@ import React from "react";
 
 export default function CardContainer(props) {
   return (
-    <div className="lg:mx-5 xl:mx-10 md:mx-2 py-5 md:py-0 ">
-      <div className="flex flex-col  flex-grow rounded-b-xl rounded-t-xl md:h-[560px] xl:h-[520px] lg:h-[516px] lg:w-[340px] bg-gradient-to-r from-slate-800 to-slate-950 border-none">
+    <div className="lg:mx-5 lg:shadow-xl lg:shadow-black xl:mx-10 md:mx-2 py-5 md:py-0 ">
+      <div
+        key={props.id}
+        className="flex flex-col  flex-grow rounded-b-xl rounded-t-xl md:h-[560px] xl:h-[520px] lg:h-[516px] lg:w-[340px] bg-gradient-to-r from-slate-800 to-slate-950 border-none">
         <img
           loading="lazy"
           className=" h-[290px] rounded-t-xl  md:h-[360px] lg:h-[350px] w-full  object-cover object-top "

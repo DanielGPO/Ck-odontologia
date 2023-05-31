@@ -9,12 +9,15 @@ html {
 @layer components {
   .nav_item {
     @apply lg:px-5 md:px-2 font-semibold text-gray-600
-        text-[16px]  py-2 hover:border-blue-400 border-b-[2px] border-b-transparent;
+        text-[16px]  py-2 hover:border-blue-500 border-b-[2px] border-b-transparent;
   }
   .active_Nav {
-    @apply border-blue-400 border-b-[2px] lg:px-5 md:px-2 font-semibold text-gray-600 text-[16px] py-2;
+    @apply border-blue-600 border-b-[2px] lg:px-5 md:px-2 font-semibold text-gray-600 text-[16px] py-2;
   }
   .mobile_Nav {
     @apply font-semibold text-white border-b border-slate-600 h-[62px] hover:bg-slate-700  flex items-center justify-center w-full text-[16px];
+  }
+  .foot_Items{
+    @apply  text-white flex flex-row items-center
   }
 }

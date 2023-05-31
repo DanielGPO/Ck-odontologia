@@ -7,17 +7,20 @@ function Testimonials() {
     {
       foto: "https://lh3.googleusercontent.com/a/AGNmyxY8BCS2KO5MBHszvRXWe_oL4UAeIcrPrP0FH_oS=w60-h60-p-rp-mo-br100",
       cliente: "Gabriel Goes",
+      id: 4,
       comentario:
         " Excelente atendimento! Profissionalismo absoluto! Pensamos juntos como seria o meu tratamento e satisfação plena com sorriso perfeito novamente! Obrigado equipe CK Odontologia!",
     },
     {
       foto: "https://lh3.googleusercontent.com/a-/ACB-R5Rc__nuz4EktFrToOc1UneNoz3ZQH6uk6EdHnf6qg=w60-h60-p-rp-mo-ba3-br100",
       cliente: "Alexandre Dionizio",
+      id: 5,
       comentario: " Excelente atendimento da Isabel e da Dra. Karina.",
     },
     {
       foto: "https://lh3.googleusercontent.com/a/AGNmyxaCXSN6p6JjkoP5Ur4v2Qz5mf24ZtPeMZZQic-u=w60-h60-p-rp-mo-br100",
       cliente: "Paolo Bruzaferro Monti",
+      id: 6,
       comentario:
         " Tinha pânico de dentista, mas desta vez foi super tranquilo.  Parabéns,  profissional, ética e com paciência. Tudo bem explicado desde o início.  Tudo que foi proposto foi cumprido.",
     },
@@ -74,7 +77,7 @@ function Testimonials() {
         <p className="lg:text-4xl  text-xl pt-4 pb-2 font-extrabold text-slate-900">
           A nossa missão é fazer você sorrir
         </p>
-        <p className="lg:text-2xl text-lg text-slate-950 font-mono lg:max-w-[1050px] ">
+        <p className="lg:text-2xl pb-4 lg:p-0 text-lg text-slate-950 font-mono lg:max-w-[1050px] ">
           Somos uma clínica odontológica dedicada a proporcionar um sorriso
           saudável e bonito para nossos pacientes. Com tratamentos
           personalizados e atendimento de qualidade, nossa missão é transformar

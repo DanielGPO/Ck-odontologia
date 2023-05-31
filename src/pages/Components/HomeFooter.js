@@ -36,32 +36,32 @@ function HomeFooter() {
         <p className="text-2xl text-white  font-bold pb-2 pt-3">Contato</p>
         <ul>
           <li>
-            <p className="text-white flex flex-row items-center">
-              <FaMapMarkerAlt className="text-orange-500 mr-2" />
+            <p className="foot_Items">
+              <FaMapMarkerAlt className="text-orange-500 mr-2 animate-pulse" />
               Centro - Rio de Janeiro
             </p>
           </li>
           <li>
-            <p className="text-white flex flex-row items-center">
-              <FaMapMarkerAlt className="text-orange-500 mr-2" />
+            <p className="foot_Items">
+              <FaMapMarkerAlt className="text-orange-500 mr-2 animate-pulse" />
               Rua Gonçalves Dias, 89 - Sobreloja 203
             </p>
           </li>
           <li>
-            <p className="text-white flex flex-row items-center">
-              <MdEmail className="text-yellow-500 mr-2" />{" "}
+            <p className="foot_Items">
+              <MdEmail className="text-yellow-500 mr-2 animate-pulse" />{" "}
               ckodontologia2@gmail.com
             </p>
           </li>
           <li>
-            <p className="text-white flex flex-row items-center">
-              <AiFillInstagram className="text-red-400 mr-2" />
+            <p className="foot_Items">
+              <AiFillInstagram className="text-red-400 mr-2 animate-pulse" />
               @ckodontologia
             </p>
           </li>
           <li>
-            <p className="text-white flex flex-row items-center">
-              <BsTelephone className="mr-2 text-sky-500" />
+            <p className="foot_Items">
+              <BsTelephone className="mr-2 text-sky-500 animate-pulse" />
               (21) 2507-5365
             </p>
           </li>

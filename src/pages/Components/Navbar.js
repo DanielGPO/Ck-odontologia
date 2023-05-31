@@ -15,11 +15,11 @@ function Navbar() {
   const encodedPhoneNumber = encodeURIComponent(phoneNumber);
 
   return (
-    <div className="md:px-16 w-full px-2 z-100  items-center bg-slate-100/50 py-8 flex flex-row justify-between">
+    <div className="md:px-16 w-full px-2 z-100  items-center bg-slate-100/50 py-7 flex flex-row justify-between">
       <div className="mx-2 md:mx-0">
-        <h2 className="md:text-[26px] md:font-bold text-[22px] text-gray-700">
-          <span className=" font-bold text-blue-800">CK</span> Odonto
-          <span>logia</span>
+        <h2 className="md:text-[26px] md:font-bold text-[28px] text-gray-700">
+          <span className=" font-bold text-blue-800 ">CK </span>
+          Odontologia
         </h2>
       </div>
 

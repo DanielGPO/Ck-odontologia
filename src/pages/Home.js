@@ -28,8 +28,8 @@ function Home() {
         <LoadingSpinner />
       ) : (
         <div>
-          <div className="lg:h-[600px] pt-2 bg-blue-400/75 flex justify-center items-center">
-            <div className="md:h-[550px] lg:h-[520px] h-[460px] sm:max-w-[900px] lg:max-w-[1230px] relative rounded-xl drop-shadow-2xl bg-white md:w-[1200px] px-auto flex flex-col md:flex-row md:my-2  md:justify-between">
+          <div className="lg:h-[600px] xl:h-[580px]  pt-2 bg-blue-400/75 flex justify-center items-center">
+            <div className="md:h-[550px] lg:h-[520px]  xl:top-[-20px] h-[460px] sm:max-w-[900px] lg:max-w-[1230px] relative rounded-xl drop-shadow-2xl  bg-white md:w-[1200px] px-auto flex flex-col md:flex-row md:my-2  md:justify-between">
               <div className="md:w-[560px] lg:w-full md:bg-gradient-to-r md:from-blue-300/50 md:to-transparent relative p-[4px] md:p-10">
                 <h2 className="md:text-slate-950 m-2 md:m-0 lg:text-black text-white text-[32px] md:text-[48px] lg:text-[59px] xl:text-[62px] relative antialiased font-extrabold">
                   A Clínica Dentária que cuida de você
@@ -46,7 +46,7 @@ function Home() {
                         href={`https://wa.me/${encodedPhoneNumber}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-green-500 text-white py-4 px-4 rounded hover:bg-green-600"
+                        className="bg-green-500  text-white py-4 px-4 rounded hover:bg-green-600"
                       >
                         Chat via WhatsApp
                       </a>

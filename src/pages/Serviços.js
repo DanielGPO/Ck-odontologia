@@ -79,7 +79,7 @@ function Serviços() {
                   loading="lazy"
                   className="object-contain w-full h-96"
                   src="https://banco.bradesco/assets/classic/img/linkedin.png"
-                  alt="Bradesco"
+                  alt=" logo do Bradesco"
                 />
               </SwiperSlide>
               <SwiperSlide>
@@ -87,7 +87,7 @@ function Serviços() {
                   loading="lazy"
                   className="object-contain w-full h-96"
                   src="https://sintaemasp.org.br/wp-content/uploads/2021/07/sintaema-odontoprev-beneficio-saude.jpg"
-                  alt="Odontoprev logo"
+                  alt=" logo da Odontoprev"
                 />
               </SwiperSlide>
               <SwiperSlide>
@@ -95,7 +95,7 @@ function Serviços() {
                   loading="lazy"
                   className="object-contain w-full h-96"
                   src="https://is2-ssl.mzstatic.com/image/thumb/Purple122/v4/e0/c5/c4/e0c5c4e2-6ddb-b2a6-1ae7-c5f45e272bb6/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x600wa.png"
-                  alt="Rede unna"
+                  alt=" logo da Rede unna"
                 />
               </SwiperSlide>
               <SwiperSlide>
@@ -103,7 +103,7 @@ function Serviços() {
                   loading="lazy"
                   className="object-contain w-full h-96"
                   src="https://www.valordeplanosdesaude.com.br/wp-content/uploads/2018/05/amil-dental1.jpg"
-                  alt="Amil"
+                  alt=" logo da Amil"
                 />
               </SwiperSlide>
               <SwiperSlide>
@@ -111,7 +111,7 @@ function Serviços() {
                   loading="lazy"
                   className="object-contain w-full h-96"
                   src="https://www.conveniomedicoempresarial.com.br/img/noticias/convenio-medico-golden-cross-pme.jpg"
-                  alt="Golden Cross"
+                  alt=" logo da Golden Cross"
                 />
               </SwiperSlide>
             </Swiper>
