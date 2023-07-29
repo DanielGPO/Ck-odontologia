@@ -15,7 +15,7 @@ function Navbar() {
   const encodedPhoneNumber = encodeURIComponent(phoneNumber);
 
   return (
-    <div className="md:px-16 w-full px-2 z-100  items-center bg-slate-100/50 py-7 flex flex-row justify-between">
+    <div className="md:px-16 w-full px-2 z-100  items-center bg-slate-100/50 py-4 flex flex-row justify-between">
       <div className="mx-2 md:mx-0">
         <h2 className="md:text-[26px] md:font-bold text-[28px] text-gray-700">
           <span className=" font-bold text-blue-800 ">CK </span>
@@ -26,6 +26,7 @@ function Navbar() {
       <nav>
         <ul className="hidden md:flex flex-row items-center">
           <NavLink
+          id="hover-1"
             to="/"
             className={({ isActive }) =>
               !isActive ? "nav_item " : "active_Nav"
@@ -34,6 +35,7 @@ function Navbar() {
             Home
           </NavLink>
           <NavLink
+          id="hover-1"
             to="/serviços"
             className={({ isActive }) =>
               !isActive ? "nav_item " : "active_Nav"
@@ -42,6 +44,7 @@ function Navbar() {
             Serviços
           </NavLink>
           <NavLink
+          id="hover-1"
             to="/sobrenos"
             className={({ isActive }) =>
               !isActive ? "nav_item " : "active_Nav"
@@ -50,7 +53,9 @@ function Navbar() {
             Sobre nós
           </NavLink>
 
-          <li className="nav_item border-blue-400 hover:bg-gray-200 p-2 px-4 md:ml-2 hover:font-bold  hover:border-blue-600 rounded-lg border-[1px]">
+          <li
+              id="hover-1"
+            className="nav_item border-blue-400 hover:bg-gray-200 p-2 px-4 md:ml-2 hover:font-bold  hover:border-blue-600 rounded-lg border-[1px]">
             <a
               className="flex flex-row items-center"
               href={`https://wa.me/${encodedPhoneNumber}`}

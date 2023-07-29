@@ -11,26 +11,31 @@ function Serviços() {
   const planos = [
     {
       titulo: "Bradesco",
+      id: 1,
       descrição:
         "Como prestadores credenciados do plano Bradesco, oferecemos atendimento completo aos nossos pacientes, incluindo tratamentos preventivos, restaurações, tratamentos de canal, extrações e próteses. Além disso, os beneficiários do plano Bradesco podem realizar exames radiográficos e receber orientações sobre a melhor forma de manter a saúde bucal.",
     },
     {
       titulo: "Odonto Prev",
+      id: 2,
       descrição:
         "A Odonto Prev é uma das principais seguradoras do mercado odontológico e, Oferecemos aos nossos pacientes uma ampla gama de tratamentos e procedimentos. Entre os serviços oferecidos pelo plano, destacamos as consultas de rotina, tratamentos de canal, restaurações, limpezas e colocação de próteses dentárias.",
     },
     {
       titulo: "Rede Unna",
+      id: 3,
       descrição:
         "O plano Rede Unna é um dos mais abrangentes em termos de cobertura odontológica e, como prestadores credenciados, oferecemos aos nossos pacientes todo o suporte necessário para manter uma boa saúde bucal. Entre os serviços cobertos pelo plano, destacamos as consultas, tratamentos de canal, colocação de próteses dentárias, limpezas e orientações sobre higiene oral.",
     },
     {
       titulo: "Amil",
+      id: 4,
       descrição:
         "O plano Amil oferece cobertura completa em odontologia, incluindo consultas de rotina, restaurações, tratamentos de canal, extrações, colocação de próteses dentárias e muito mais. Garantimos aos nossos pacientes um atendimento de qualidade, com todo o suporte necessário para manter uma boa saúde bucal.",
     },
     {
       titulo: "Golden Cross",
+      id: 5,
       descrição:
         "Como prestadores credenciados do plano Golden Cross, oferecemos aos nossos pacientes uma ampla gama de serviços odontológicos, incluindo consultas, limpezas, tratamentos de canal, restaurações, próteses e orientações sobre higiene oral.",
     },
@@ -44,7 +49,7 @@ function Serviços() {
           <p className="text-white text-xl mx-10 pb-4">Cobrimos os planos</p>
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  ">
             {planos.map((plano) => (
-              <li className=" p-5">
+              <li key={plano.id} className=" p-5">
                 <div className="flex flex-col  p-6 border flex-grow border-slate-600 rounded-lg shadow dark:bg-gray-800 dark:hover:bg-gray-700">
                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
                     {plano.titulo}

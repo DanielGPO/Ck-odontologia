@@ -6,13 +6,23 @@ html {
   scroll-behavior: smooth;
 }
 
+#hover-1 {
+  background: linear-gradient(#1095c1 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+  transition: .4s, background-position 0s;
+}
+
+#hover-1:hover {
+  --p: 100%;
+  color: #fff;
+}
+
 @layer components {
   .nav_item {
     @apply lg:px-5 md:px-2 font-semibold text-gray-600
-        text-[16px]  py-2 hover:border-blue-500 border-b-[2px] border-b-transparent;
+        text-[16px]  py-2 border-b-[2px] border-b-transparent;
   }
   .active_Nav {
-    @apply border-blue-600 border-b-[2px] lg:px-5 md:px-2 font-semibold text-gray-600 text-[16px] py-2;
+    @apply border-blue-500 border-b-[2px] lg:px-5 md:px-2 font-semibold text-gray-600 text-[16px] py-2;
   }
   .mobile_Nav {
     @apply font-semibold text-white border-b border-slate-600 h-[62px] hover:bg-slate-700  flex items-center justify-center w-full text-[16px];

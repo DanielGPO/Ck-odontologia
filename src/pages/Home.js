@@ -1,39 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import homesmile from "../imagens/homesmile.jpg";
 import { FaTooth } from "react-icons/fa";
 import Arraydecards from "./Components/Arraydecards";
-import { CARDS } from "./Components/Arraydecards";
 import HomeFooter from "./Components/HomeFooter";
 import Testimonials from "./Testimonials";
-import LoadingSpinner from "./Components/LoadingSpinner";
 
 function Home() {
   const phoneNumber = "2125075365";
   const encodedPhoneNumber = encodeURIComponent(phoneNumber);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const delay = 2000; // Tempo de espera em milissegundos
-
-    const timeout = setTimeout(() => {
-      setIsLoading(false);
-    }, delay);
-
-    return () => clearTimeout(timeout);
-  }, []);
-
   return (
     <div className="flex flex-col overflow-x-hidden">
-      {isLoading ? (
-        <LoadingSpinner />
-      ) : (
         <div>
           <div className="lg:h-[600px] xl:h-[580px]  pt-2 bg-blue-400/75 flex justify-center items-center">
             <div className="md:h-[550px] lg:h-[520px]  xl:top-[-20px] h-[460px] sm:max-w-[900px] lg:max-w-[1230px] relative rounded-xl drop-shadow-2xl  bg-white md:w-[1200px] px-auto flex flex-col md:flex-row md:my-2  md:justify-between">
               <div className="md:w-[560px] lg:w-full md:bg-gradient-to-r md:from-blue-300/50 md:to-transparent relative p-[4px] md:p-10">
                 <h2 className="md:text-slate-950 m-2 md:m-0 lg:text-black text-white text-[32px] md:text-[48px] lg:text-[59px] xl:text-[62px] relative antialiased font-extrabold">
                   A Clínica Dentária que cuida de você
-                  <div className="md:absolute w-full hidden md:flex h-full top-0 bg-gradient-to-r from-transparent to-white/50" />
+                  <div className="md:absolute w-full hidden xl:flex h-full top-0 bg-gradient-to-r from-transparent to-white/50" />
                 </h2>
                 <div className="mt-[150px] mx-2 lg:mt-[30px] md:mt-[40px]">
                   <p className="md:italic md:text-blue-600 text-white font-extrabold text-[20px] md:text-[16px] flex flex-row items-center">
@@ -41,7 +24,6 @@ function Home() {
                     Entre em contato através do Whatsapp e agende uma consulta
                   </p>
                   <div className="ml-2 md:ml-0 lg:mt-10 mt-[50px]">
-                    <div className="lg:w-[179px]">
                       <a
                         href={`https://wa.me/${encodedPhoneNumber}`}
                         target="_blank"
@@ -50,7 +32,6 @@ function Home() {
                       >
                         Chat via WhatsApp
                       </a>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -72,7 +53,7 @@ function Home() {
                 <span className="text-sky-300">odontológicos</span>
               </p>
               <div className="flex items-center justify-center">
-                <Arraydecards items={CARDS} />
+                <Arraydecards/>
               </div>
             </div>
             <div>
@@ -83,7 +64,6 @@ function Home() {
             </footer>
           </div>
         </div>
-      )}
     </div>
   );
 }
